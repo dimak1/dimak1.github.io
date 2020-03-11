@@ -1,0 +1,145 @@
+.wrapper {
+  text-align: center;
+
+  // GLOBAL
+  .ant-divider {
+    // height: 3px;
+    margin: 40px 0;
+    background: -webkit-linear-gradient(to left, #ec2f4b, #1890ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ec2f4b, #1890ff);
+  }
+  .header {
+    background: #009fff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ec2f4b, #1890ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to left,
+      #ec2f4b,
+      #1890ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .menu {
+      line-height: 64px;
+      margin: 0 auto;
+      max-width: 1200px;
+      background-color: transparent;
+      text-align: right;
+
+      li.ant-menu-item a {
+        color: white;
+      }
+    }
+
+    .ant-menu-item,
+    .ant-menu-item:hover {
+      border-color: transparent;
+    }
+  }
+
+  // HOME PAGE
+
+  .home {
+    .content {
+      max-width: 600px;
+      // margin-top: calc(10vh);
+
+      h3 {
+        font-weight: normal;
+        margin-bottom: 2em;
+      }
+
+      .about-me {
+        font-size: 18px;
+        line-height: 30px;
+      }
+
+      i {
+        font-size: 15px;
+      }
+      .name {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-weight: normal;
+      }
+
+      .home-actions {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  // RESUME PAGE
+  .resume {
+    .all-skills {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    .skill-card {
+      padding: 30px;
+
+      .ant-card {
+        width: 300px;
+        &:hover {
+          border-color: #1890ff;
+        }
+      }
+
+      .ant-card-head-title {
+        font-size: 30px;
+      }
+
+      .anticon {
+        font-size: 30px;
+      }
+
+      ul {
+        margin-left: 5px;
+      }
+
+      li {
+        list-style: none;
+        line-height: 1em;
+      }
+    }
+
+    .work-timeline {
+      // text-align: left;
+
+      .ant-timeline-item-head {
+        background: transparent;
+      }
+      p {
+        color: #000;
+        font-size: 16px;
+        margin: 5px 0;
+      }
+      span {
+        color: grey;
+      }
+    }
+  }
+
+  // CONTACT PAGE
+  .contact {
+    .profile-links {
+      width: 200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  // FOOTER
+  .site-footer {
+    span {
+      // color: grey;
+
+      // a {
+      //   color: grey;
+      // }
+    }
+  }
+}
