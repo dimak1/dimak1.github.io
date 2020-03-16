@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Typography, Icon, Button, Divider, Card, Timeline } from "antd"
 import MainLayout from "../layout/main-layout"
 // import { useStaticQuery, graphql } from "gatsby"
@@ -95,15 +96,16 @@ const ResumePage = () => {
         </Timeline>
       </div>
       <Divider />
-
-      <Button type="primary" shape="round" icon="download">
+      {/* <Button type="primary" shape="round" icon="download">
         Download Resume
       </Button>
       <br />
-      <br />
-      <Button type="secondary" shape="round" icon="mail">
-        Contact Me
-      </Button>
+      <br /> */}
+      <Link to="/contact/">
+        <Button type="secondary" shape="round" icon="mail">
+          Contact Me
+        </Button>
+      </Link>
     </MainLayout>
   )
 }

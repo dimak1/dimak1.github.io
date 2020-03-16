@@ -34,9 +34,9 @@ const MainLayout = props => {
         {children}
       </Content>
       <Footer className="site-footer">
-        <Icon type="copyright" /> 2020 Dima Kostenyuk.{" "}
+        <Icon type="copyright" /> {new Date().getFullYear()} Dima Kostenyuk.{" "}
         <Text type="secondary">
-          Built with React & Gatsby. <a>View source</a>. Hosted with <a>WHC</a>.
+          Built with React & Gatsby. <a>View source</a>.
         </Text>
       </Footer>
     </Layout>
