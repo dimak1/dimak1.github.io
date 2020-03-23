@@ -1,8 +1,6 @@
-version: 2.0
+version: 2.1
 jobs:
   build:
-    branches:
-      - develop
     docker:
       - image: circleci/node:10.14.1
     # working_directory: ~/repo
@@ -10,7 +8,11 @@ jobs:
       - checkout
       - run: yarn install
       - run: yarn deploy
-# workflows:
-#   build-and-test:
-#     jobs:
-#       - build-and-test
+workflows:
+  build:
+    jobs:
+      - build
+        filters:
+          branches:
+            only:
+              - develop
