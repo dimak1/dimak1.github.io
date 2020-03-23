@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 // import Layout from "../components/layout"
 import MainLayout from "../layout/main-layout"
-import SEO from "../components/seo"
 import { Typography, Button, Divider, Icon } from "antd"
 
 const { Title, Paragraph } = Typography

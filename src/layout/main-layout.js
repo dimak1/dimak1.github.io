@@ -36,7 +36,11 @@ const MainLayout = props => {
       <Footer className="site-footer">
         <Icon type="copyright" /> {new Date().getFullYear()} Dima Kostenyuk.{" "}
         <Text type="secondary">
-          Built with React & Gatsby. <a>View source</a>.
+          Built with React & Gatsby.{" "}
+          <a href="https://github.com/dimak1/personal-site" target="_blank">
+            View source
+          </a>
+          .
         </Text>
       </Footer>
     </Layout>

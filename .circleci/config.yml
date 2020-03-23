@@ -1,10 +1,9 @@
 version: 2.1
-# orbs:
-#   node: circleci/node@1.1.6
 jobs:
   build:
-    # executor:
-    #   name: node/default
+    branches:
+      only:
+        - develop
     docker:
       - image: circleci/node:10.14.1
     # working_directory: ~/repo

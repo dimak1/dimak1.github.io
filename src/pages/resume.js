@@ -26,9 +26,9 @@ const ResumePage = () => {
       <Divider />
       <Title level={2}>Highlights</Title>
       <p>
-        Extensive experience in all phases of Software Development Life Cycle (SDLC) and have worked using Waterfall and
-        Agile / Scrum methodologies. I have worked on websites and applications for small business and large
-        enterprises.
+        Enthusiastic software developer with experience in all project phases. <br />
+        Worked on websites and applications for small business and large enterprises. <br />
+        Exceptional team player with multiple recognitions.
       </p>
       <Divider />
       <Title>Technical Skills</Title>
