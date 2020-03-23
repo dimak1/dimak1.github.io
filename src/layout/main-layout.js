@@ -12,7 +12,7 @@ const MainLayout = props => {
       <Header className="header">
         <Menu mode="horizontal" className="menu">
           <Menu.Item key="1">
-            <Link to="/">Home</Link>
+            <Link to="/">About</Link>
           </Menu.Item>
           <Menu.Item key="2">
             <Link to="/resume/">Resume</Link>

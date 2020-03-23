@@ -9,7 +9,7 @@ const { Title } = Typography
 
 const SkillsList = ({ title, data, icon = "" }) => (
   <div className="skill-card">
-    <Card title={title} extra={<Icon type={icon} />}>
+    <Card title={title} extra={<Icon type={icon} theme="outlined" />}>
       <ul>
         {data.map((item, index) => (
           <li key={index}>{item}</li>
@@ -40,6 +40,7 @@ const ResumePage = () => {
         <SkillsList title="Testing" icon="dashboard" data={skills.testing} />
         <SkillsList title="Tracking" icon="file-done" data={skills.tracking} />
         <SkillsList title="DevOps" icon="deployment-unit" data={skills.devOps} />
+        <SkillsList title="Website" icon="global" data={skills.website} />
         <SkillsList title="Tools" icon="tool" data={skills.tools} />
         <SkillsList title="Analytics" icon="line-chart" data={skills.analytics} />
       </div>

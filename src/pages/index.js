@@ -10,7 +10,6 @@ const { Title, Paragraph } = Typography
 
 const IndexPage = () => (
   <MainLayout className="home">
-    <SEO title="Home" />
     <div className="content">
       <Title className="name">Dima Kostenyuk</Title>
       <Divider />

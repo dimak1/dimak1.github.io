@@ -1,12 +1,43 @@
 {
   "skills": {
-    "code": ["Java", "JavaScript", "ES6", "HTML", "CSS", "jQuery", "Sass", "Java", "PHP", "Python", "GraphQL", "SQL"],
-    "design": ["Wireframing", "Website design", "Photoshop", "Illustrator", "Sketch", "inVision"],
-    "develop": ["Ajax", "Json", "Ember.js", "Node.js", "WordPress", "Bootstrap", "REST API", "SEO", "RWD"],
+    "code": [
+      "HTML",
+      "CSS",
+      "ES6",
+      "JavaScript",
+      "TypeScript",
+      "jQuery",
+      "Sass",
+      "Java",
+      "PHP",
+      "Python",
+      "GraphQL",
+      "SQL"
+    ],
+    "design": [
+      "UI/UX design",
+      "Low/High fidelity design",
+      "Responsive Web Design (RWD)",
+      "Wireframing",
+      "Photoshop",
+      "Illustrator",
+      "Sketch",
+      "inVision"
+    ],
+    "develop": ["Ajax", "Json", "NodeJS", "ReactJS", "EmberJS", "Bootstrap", "REST API"],
     "testing": ["HP ALM (QC)", "jUnit", "Jest", "Unit", "Acceptance", "Integration", "TDD"],
     "tracking": ["Jira", "Confluence", "SharePoint", "Git", "Svn", "Slack", "YouTrack"],
-    "devOps": ["CI/CD", "Jenkins", "CircleCI", "OpenShift", "AWS", "Heroku", "Docker"],
+    "devOps": ["CI/CD", "CircleCI", "Jenkins", "AWS", "Heroku"],
     "tools": ["Microsoft VS Code", "Eclipse", "SourceTree", "Chrome DevTools", "Postman"],
-    "analytics": ["Google Analytics", "Facebook Audience Insights", "Facebook Pixel"]
+    "analytics": ["Google Analytics", "Facebook Audience Insights", "Facebook Pixel"],
+    "website": [
+      "Website design",
+      "Optimization",
+      "Integrations",
+      "Hosting",
+      "WordPress",
+      "eCommerce",
+      "Search Engine Optimization (SEO)"
+    ]
   }
 }
