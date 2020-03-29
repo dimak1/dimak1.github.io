@@ -9,6 +9,7 @@ jobs:
       - run: yarn install
       - run: yarn deploy
 workflows:
+  version: 2
   build:
     jobs:
       - build
