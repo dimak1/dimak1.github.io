@@ -37,7 +37,7 @@ const MainLayout = props => {
         <Icon type="copyright" /> {new Date().getFullYear()} Dima Kostenyuk.{" "}
         <Text type="secondary">
           Built with React & Gatsby.{" "}
-          <a href="https://github.com/dimak1/personal-site" target="_blank">
+          <a href="https://github.com/dimak1/personal-site" target="_blank" rel="noopener noreferrer">
             View source
           </a>
           .

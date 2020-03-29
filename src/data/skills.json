@@ -1,8 +1,8 @@
 {
   "skills": {
     "code": [
-      "HTML",
-      "CSS",
+      "HTML5",
+      "CSS3",
       "ES6",
       "JavaScript",
       "TypeScript",
@@ -24,7 +24,7 @@
       "Sketch",
       "inVision"
     ],
-    "develop": ["Ajax", "Json", "NodeJS", "ReactJS", "EmberJS", "Bootstrap", "REST API"],
+    "develop": ["Ajax", "Json", "NodeJS", "ReactJS", "EmberJS", "Bootstrap", "Semantic UI", "REST API"],
     "testing": ["HP ALM (QC)", "jUnit", "Jest", "Unit", "Acceptance", "Integration", "TDD"],
     "tracking": ["Jira", "Confluence", "SharePoint", "Git", "Svn", "Slack", "YouTrack"],
     "devOps": ["CI/CD", "CircleCI", "Jenkins", "AWS", "Heroku"],
