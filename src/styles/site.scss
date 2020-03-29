@@ -3,40 +3,55 @@
 
   // GLOBAL
   .ant-divider {
-    // height: 3px;
     margin: 40px 0;
+  }
+  .divider {
     background: -webkit-linear-gradient(to left, #ec2f4b, #1890ff); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #ec2f4b, #1890ff);
   }
+  .divider-alt {
+    background: -webkit-linear-gradient(to right, #ec2f4b, #1890ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2f4b, #1890ff);
+  }
+
   .header {
-    background: #009fff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #ec2f4b, #1890ff); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to left,
-      #ec2f4b,
-      #1890ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: white;
 
     .menu {
       line-height: 64px;
       margin: 0 auto;
       max-width: 1200px;
-      background-color: transparent;
       text-align: right;
-
-      li.ant-menu-item a {
-        color: white;
-      }
-    }
-
-    .ant-menu-item,
-    .ant-menu-item:hover {
-      border-color: transparent;
     }
   }
 
-  // HOME PAGE
+  .name {
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-image: linear-gradient(198deg, #096dd9, #865aa4, #f5222d);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
 
+  .title {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 200;
+  }
+
+  .p {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
+  // ANIMATION
+  .delay-05s {
+    animation-delay: 0.5s;
+  }
+
+  // HOME PAGE
   .home {
     .content {
       max-width: 600px;
@@ -45,22 +60,6 @@
       h3 {
         font-weight: normal;
         margin-bottom: 2em;
-      }
-
-      .about-me {
-        font-size: 18px;
-        line-height: 30px;
-      }
-
-      i {
-        font-size: 15px;
-      }
-      .name {
-        font-size: 40px;
-      }
-
-      h2 {
-        font-weight: normal;
       }
 
       .home-actions {
@@ -72,6 +71,9 @@
 
   // RESUME PAGE
   .resume {
+    .intro span {
+      border-bottom: 1px dotted #000;
+    }
     .all-skills {
       display: flex;
       flex-wrap: wrap;
@@ -83,7 +85,19 @@
       .ant-card {
         width: 300px;
         &:hover {
-          border-color: #1890ff;
+          border-color: #865aa4;
+
+          i {
+            color: #865aa4;
+          }
+
+          .ant-card-head-title {
+            transition: all 0.2s;
+            background-image: linear-gradient(-165deg, #096dd9, #865aa4, #f5222d);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+          }
         }
       }
 
@@ -106,8 +120,7 @@
     }
 
     .work-timeline {
-      // text-align: left;
-
+      margin-top: 30px;
       .ant-timeline-item-head {
         background: transparent;
       }
@@ -134,12 +147,6 @@
 
   // FOOTER
   .site-footer {
-    span {
-      // color: grey;
-
-      // a {
-      //   color: grey;
-      // }
-    }
+    background: white;
   }
 }

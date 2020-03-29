@@ -2,41 +2,46 @@ import React from "react"
 import { Link } from "gatsby"
 import { Typography, Icon, Button, Divider, Card, Timeline } from "antd"
 import MainLayout from "../layout/main-layout"
-// import { useStaticQuery, graphql } from "gatsby"
 import { skills } from "../data/skills.json"
 
-const { Title } = Typography
-
-const SkillsList = ({ title, data, icon = "" }) => (
-  <div className="skill-card">
-    <Card title={title} extra={<Icon type={icon} theme="outlined" />}>
-      <ul>
-        {data.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </Card>
-  </div>
-)
+const { Title, Paragraph } = Typography
 
 const ResumePage = () => {
+  let delay = 0
+
+  const SkillsList = ({ title, data, icon = "" }) => (
+    <div style={{ animationDelay: `${(delay += 0.1)}s` }} className="skill-card animated fadeInUp faster">
+      {console.log(delay)}
+      <Card title={title} extra={<Icon type={icon} theme="outlined" className="" />}>
+        <div className="border-c">
+          <ul>
+            {data.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </Card>
+    </div>
+  )
+
   return (
     <MainLayout className="resume">
-      <Title>Resume</Title>
-      <Divider />
-      <Title level={2}>Highlights</Title>
-      <p>
-        Enthusiastic software developer with experience in all project phases. <br />
-        Worked on websites and applications for small business and large enterprises. <br />
+      <Title className="animated fadeInDown">Resume</Title>
+      <Divider className="divider animated fadeInLeft" />
+      <Paragraph className="p title intro animated fadeIn slower">
+        Enthusiastic software developer with experience building <br />
+        websites and web applications for small businesses and large enterprises. <br />
+        Proficient in all project phases with ability to work cross-functionally. <br />
         Exceptional team player with multiple recognitions.
-      </p>
-      <Divider />
-      <Title>Technical Skills</Title>
+      </Paragraph>
+      <Divider className="divider-alt animated fadeInRight" />
+
+      <Title className="animated flipInX">Skills</Title>
 
       <div className="all-skills">
         <SkillsList title="Code" icon="code" data={skills.code} />
         <SkillsList title="Design" icon="bg-colors" data={skills.design} />
-        <SkillsList title="Develop" icon="branches" data={skills.develop} />
+        <SkillsList title="Develop" icon="branches" data={skills.develop} Z />
         <SkillsList title="Testing" icon="dashboard" data={skills.testing} />
         <SkillsList title="Tracking" icon="file-done" data={skills.tracking} />
         <SkillsList title="DevOps" icon="deployment-unit" data={skills.devOps} />
@@ -44,23 +49,17 @@ const ResumePage = () => {
         <SkillsList title="Tools" icon="tool" data={skills.tools} />
         <SkillsList title="Analytics" icon="line-chart" data={skills.analytics} />
       </div>
-      <Divider />
-      <Title>Work Experience</Title>
-      <div className="work-timeline">
+
+      <Divider className="divider animated fadeInRight" />
+      <Title className="animated flipInX delay-1s">Work</Title>
+
+      <div className="work-timeline animated fadeInUp delay-1s">
         <Timeline mode="alternate">
           <Timeline.Item color="green">
-            <p>Full-stack Developer @ Button Inc.</p>
-            <div>Oct 2019 - Present</div>
-            <span>
-              - Work as part of Agile team on projects for public and private sectors
-              <br />
-              - Develop web applications and create interactive user interfaces and experiences
-              <Icon type="tool" /> Javascript, TypeScript, Node.js, React, GraphQL, PostgreSQL
-            </span>
-          </Timeline.Item>
-          <Timeline.Item color="green">
             <span>Sept 2011 - Present</span>
-            <p>Digital Designer and Website Developer @ Freelance</p>
+            <p>
+              Digital Designer and Website Developer @ Freelance<span> - Worldwide</span>
+            </p>
             <span>
               - Design websites, logos, social media content and ads
               <br />
@@ -72,17 +71,35 @@ const ResumePage = () => {
             </span>
           </Timeline.Item>
           <Timeline.Item color="grey">
-            <span>March 2018</span>
-            <p>Front-End Web Developer @ CIBC</p>
+            <span>Oct 2019 - March 2020</span>
+            <p>
+              Full-stack Developer @ Button Inc.<span> - Victoria, BC</span>
+            </p>
             <span>
-              - Create responsive pages and components using <br />
-              - Identify problems, determine the root cause, provide recommendations and solutions <br />
-              <Icon type="tool" /> Javascript, Ember.js, HTML, CSS, inVision
+              - Work as part of Agile team on projects for BC government and private clients
+              <br />
+              - Develop web applications and create interactive user interfaces and experiences
+              <Icon type="tool" /> Javascript, TypeScript, Node.js, React, GraphQL, PostgreSQL
             </span>
           </Timeline.Item>
           <Timeline.Item color="grey">
-            <span>Jan 2013</span>
-            <p>Back-End Web Developer @ CIBC</p>
+            <span>March 2018 - Sept 2019</span>
+            <p>
+              Front-end Web Developer @ CIBC<span> - Toronto, ON</span>
+            </p>
+            <span>
+              - Create responsive forms and reusable components
+              <br />
+              - Identify problems, determine the root cause, provide recommendations and solutions <br />
+              <Icon type="tool" /> Javascript, Ember.js, HTML, CSS, inVision
+              <br />
+            </span>
+          </Timeline.Item>
+          <Timeline.Item color="grey">
+            <span>Jan 2013 - March 2018</span>
+            <p>
+              Back-end Web Developer @ CIBC <span> - Toronto, ON</span>
+            </p>
             <span>
               - Design, develop, build and test web application systems
               <br />
@@ -96,14 +113,15 @@ const ResumePage = () => {
           <Timeline.Item dot={<Icon type="up-circle" />}></Timeline.Item>
         </Timeline>
       </div>
-      <Divider />
+
+      <Divider className="divider-alt animated fadeInUp delay-2s" />
       {/* <Button type="primary" shape="round" icon="download">
         Download Resume
       </Button>
       <br />
       <br /> */}
-      <Link to="/contact/">
-        <Button type="secondary" shape="round" icon="mail">
+      <Link to="/contact/" className="animated fadeInUp delay-2s">
+        <Button type="secondary" shape="round" icon="mail" size="large">
           Contact Me
         </Button>
       </Link>

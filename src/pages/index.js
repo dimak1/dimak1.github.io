@@ -1,43 +1,46 @@
 import React from "react"
 import { Link } from "gatsby"
+import "animate.css"
 
 // import Layout from "../components/layout"
 import MainLayout from "../layout/main-layout"
-import { Typography, Button, Divider, Icon } from "antd"
+import { Typography, Button, Divider } from "antd"
 
 const { Title, Paragraph } = Typography
 
 const IndexPage = () => (
   <MainLayout className="home">
     <div className="content">
-      <Title className="name">Dima Kostenyuk</Title>
-      <Divider />
-
-      <Title level={2}>
-        I'm a <strong>full-stack developer</strong>
+      <Title className="name animated fadeInDown">Dima Kostenyuk</Title>
+      <Divider className="divider animated fadeInLeft" />
+      <Title level={2} className="title animated fadeIn slower">
+        I'm a full-stack developer
         <br />
         with a passion for technology and design.
       </Title>
-      <Title level={3}>
+      <Divider className="divider-alt animated fadeInRight" />
+
+      <Paragraph className="p title animated flipInX delay-05s">
         I like to solve challenges by learning new things.
-        <br />I freelance as website designer & developer. My goal is to create best online experiences.
-      </Title>
-      <Paragraph className="about-me">
-        I'm into traveling <Icon type="car" />, good vibes <Icon type="customer-service" /> and capturing beautiful
-        moments <Icon type="camera" /> <Icon type="video-camera" />
+        <br />I freelance as website designer & developer. I enjoy traveling, listenting to house music and capturing
+        beautiful moments.
+        <br />
+        <br />
         Currently living in Victoria, British Columbia, Canada.
       </Paragraph>
-
-      <Divider />
-      <div className="home-actions">
-        <Link to="/resume/">
-          <Button type="primary" shape="round" icon="profile" size="large">
-            Resume
-          </Button>
-        </Link>{" "}
+      <br />
+      <br />
+      <div className="animated fadeInUp delay-1s">
         <Link to="/contact/">
-          <Button type="primary" shape="round" icon="mail" size="large">
+          <Button shape="round" icon="mail" size="large">
             Contact Me
+          </Button>
+        </Link>
+        <br />
+        <br />
+        <Link to="/resume/">
+          <Button shape="round" icon="profile" size="large">
+            Resume
           </Button>
         </Link>
       </div>
