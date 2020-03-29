@@ -11,7 +11,6 @@ const ResumePage = () => {
 
   const SkillsList = ({ title, data, icon = "" }) => (
     <div style={{ animationDelay: `${(delay += 0.1)}s` }} className="skill-card animated fadeInUp faster">
-      {console.log(delay)}
       <Card title={title} extra={<Icon type={icon} theme="outlined" className="" />}>
         <div className="border-c">
           <ul>
