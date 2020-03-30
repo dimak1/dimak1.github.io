@@ -7,6 +7,8 @@ jobs:
     steps:
       - checkout
       - run: yarn install
+      - run: git config user.email $GITHUB_EMAIL
+      - run: git config user.name $GITHUB_NAME
       - run: yarn deploy
 workflows:
   version: 2
