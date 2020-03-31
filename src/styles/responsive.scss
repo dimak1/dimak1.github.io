@@ -1,0 +1,54 @@
+.wrapper.mobile {
+  .header .menu {
+    text-align: center;
+  }
+
+  .content {
+    padding: 50px 30px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .about-me {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .home .p {
+    font-size: 15px;
+  }
+
+  .resume {
+    .intro li {
+      font-size: 15px;
+      max-width: 100%;
+
+      .ant-timeline-item-content {
+        top: -7px;
+      }
+    }
+  }
+
+  .contact {
+    .profile-links {
+      width: 150px;
+      height: 160px;
+      flex-flow: wrap;
+    }
+  }
+  footer {
+    padding-left: 35px;
+    font-size: 12px;
+  }
+
+  .site-footer .source-code {
+    display: block;
+    margin-top: 5px;
+  }
+}

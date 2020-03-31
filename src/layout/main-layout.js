@@ -1,14 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { useMediaQuery } from "react-responsive"
 import { Layout, Menu, Icon, Typography } from "antd"
 const { Header, Content, Footer } = Layout
 const { Text } = Typography
 
 const MainLayout = props => {
   const { className, children } = props
+  const isMobile = useMediaQuery({ query: "(max-width : 768px)" })
+
   return (
-    <Layout className="wrapper">
+    <Layout className={"wrapper" + (isMobile ? " mobile" : "")}>
       <Header className="header">
         <Menu mode="horizontal" className="menu">
           <Menu.Item key="1">
@@ -22,26 +25,18 @@ const MainLayout = props => {
           </Menu.Item>
         </Menu>
       </Header>
-      <Content
-        className={className}
-        style={{
-          padding: "50px",
-          margin: `auto`,
-          maxWidth: 1200,
-          minHeight: "calc(100vh - 64px - 69px)",
-        }}
-      >
-        {children}
-      </Content>
-      <Footer className="site-footer">
-        <Icon type="copyright" /> {new Date().getFullYear()} Dima Kostenyuk.{" "}
-        <Text type="secondary">
-          Built with React & Gatsby.{" "}
-          <a href="https://github.com/dimak1/personal-site" target="_blank" rel="noopener noreferrer">
-            View source
-          </a>
-          .
-        </Text>
+      <Content className={"content " + className}>{children}</Content>
+      <Footer>
+        <div className="site-footer">
+          <Icon type="copyright" /> {new Date().getFullYear()} Dima Kostenyuk.{isMobile ? <br /> : " "}
+          <Text type="secondary" className="source-code">
+            Built with React & Gatsby.{" "}
+            <a href="https://github.com/dimak1/personal-site" target="_blank" rel="noopener noreferrer">
+              View source
+            </a>
+            .
+          </Text>
+        </div>
       </Footer>
     </Layout>
   )

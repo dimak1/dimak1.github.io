@@ -5,3 +5,4 @@
  */
 
 import "./src/styles/site.scss"
+import "./src/styles/responsive.scss"

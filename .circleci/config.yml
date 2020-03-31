@@ -7,9 +7,8 @@ jobs:
     steps:
       - checkout
       - run: yarn install
-      - add_ssh_keys:
-          fingerprints:
-            - "a4:a0:f2:47:35:3b:94:0d:38:17:d2:8a:96:71:c2:2c"
+      - run: git config user.email $GITHUB_EMAIL
+      - run: git config user.name $GITHUB_NAME
       - run: yarn deploy
 workflows:
   version: 2
