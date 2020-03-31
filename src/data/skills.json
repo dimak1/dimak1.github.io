@@ -26,18 +26,10 @@
     ],
     "develop": ["Ajax", "Json", "NodeJS", "ReactJS", "EmberJS", "Bootstrap", "Semantic UI", "REST API"],
     "testing": ["HP ALM (QC)", "jUnit", "Jest", "Unit", "Acceptance", "Integration", "TDD"],
-    "tracking": ["Jira", "Confluence", "SharePoint", "Git", "Svn", "Slack", "YouTrack"],
-    "devOps": ["CI/CD", "CircleCI", "Jenkins", "AWS", "Heroku"],
-    "tools": ["Microsoft VS Code", "Eclipse", "SourceTree", "Chrome DevTools", "Postman"],
+    "tracking": ["Jira", "Confluence", "SharePoint", "YouTrack", "Git", "Svn"],
+    "devOps": ["CI/CD", "CircleCI", "Jenkins", "Heroku", "AWS"],
+    "tools": ["Visual Studio Code", "Eclipse", "Chrome DevTools", "Postman", "SourceTree"],
     "analytics": ["Google Analytics", "Facebook Audience Insights", "Facebook Pixel"],
-    "website": [
-      "Website design",
-      "Optimization",
-      "Integrations",
-      "Hosting",
-      "WordPress",
-      "eCommerce",
-      "Search Engine Optimization (SEO)"
-    ]
+    "website": ["Website design", "Optimization", "Integrations", "Hosting", "WordPress", "eCommerce", "SEO"]
   }
 }

@@ -16,13 +16,19 @@ const ContactPage = () => {
       <Divider className="divider-alt animated fadeInRight" />
       <div className="profile-links animated fadeInUp delay-05s">
         <a href="ma&#105;lt&#111;&#58;&#37;64&#37;6B%&#54;Fs%74en%79&#117;&#37;6&#66;&#64;gmail&#46;co&#109;">
-          <Button shape="circle" icon="mail" size="large"></Button>
+          <Button shape="round" icon="mail" size="large">
+            Email
+          </Button>
         </a>
         <a href={contact.github} target="_blank" rel="noopener noreferrer">
-          <Button shape="circle" icon="github" size="large"></Button>
+          <Button shape="round" icon="github" size="large">
+            GitHub
+          </Button>
         </a>
         <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">
-          <Button shape="circle" icon="linkedin" size="large"></Button>
+          <Button shape="round" icon="linkedin" size="large">
+            LinkedIn
+          </Button>
         </a>
       </div>
     </MainLayout>
