@@ -24,11 +24,11 @@
       "Sketch",
       "inVision"
     ],
-    "develop": ["Ajax", "Json", "NodeJS", "ReactJS", "EmberJS", "Bootstrap", "Semantic UI", "REST API"],
+    "develop": ["ReactJS", "EmberJS", "NodeJS", "REST API", "Bootstrap", "Semantic UI", "Json", "Ajax"],
     "testing": ["HP ALM (QC)", "jUnit", "Jest", "Unit", "Acceptance", "Integration", "TDD"],
     "tracking": ["Jira", "Confluence", "SharePoint", "YouTrack", "Git", "Svn"],
     "devOps": ["CI/CD", "CircleCI", "Jenkins", "Heroku", "AWS"],
-    "tools": ["Visual Studio Code", "Eclipse", "Chrome DevTools", "Postman", "SourceTree"],
+    "tools": ["Visual Studio Code", "Chrome DevTools", "Postman", "SourceTree", "Eclipse"],
     "analytics": ["Google Analytics", "Facebook Audience Insights", "Facebook Pixel"],
     "website": ["Website design", "Optimization", "Integrations", "Hosting", "WordPress", "eCommerce", "SEO"]
   }

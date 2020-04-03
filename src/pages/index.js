@@ -17,8 +17,9 @@ const IndexPage = () => (
     <Divider className="divider-alt animated fadeInRight" />
 
     <Paragraph className="about-me animated flipInX delay-05s">
-      I like to solve challenges by learning new things. I freelance as website designer & developer. I enjoy traveling,
-      listenting to house music and capturing beautiful moments. Currently living in Victoria, British Columbia, Canada.
+      I like to solve challenges by learning new things. I freelance as a website designer & developer. I enjoy
+      traveling, listenting to house music and capturing beautiful moments. Currently living in Victoria, British
+      Columbia, Canada.
     </Paragraph>
     <br />
     <Row gutter={[32, 12]} className="animated fadeInUp delay-1s">
