@@ -3,19 +3,20 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.14.1
-    # working_directory: ~/repo
+    working_directory: ~/personal-site
     steps:
       - checkout
       - run: yarn install
       - run: git config user.email $GITHUB_EMAIL
       - run: git config user.name $GITHUB_NAME
       - run: yarn deploy
+
 workflows:
   version: 2
   build:
     jobs:
       - build:
-        filters:
-          branches:
-            only:
-              - develop
+          filters:
+            branches:
+              only:
+                - develop
