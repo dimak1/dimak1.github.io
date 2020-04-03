@@ -21,6 +21,9 @@
     background: -webkit-linear-gradient(to right, #ec2f4b, #1890ff); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ec2f4b, #1890ff);
   }
+  .ant-timeline-item-tail {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
   .header {
     background: white;
@@ -114,7 +117,7 @@
         &:hover {
           border-color: #865aa4;
 
-          i {
+          .anticon {
             color: #865aa4;
           }
 
@@ -185,9 +188,12 @@
   // FOOTER
   footer {
     background: white;
+    padding-left: 0;
+    padding-right: 0;
     .site-footer {
       margin: auto;
       max-width: 1200px;
+      padding: 0 30px;
     }
   }
 }

@@ -1,11 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import "animate.css"
-
-// import Layout from "../components/layout"
+import { MailOutlined, ProfileOutlined } from "@ant-design/icons"
 import MainLayout from "../layout/main-layout"
-import { Typography, Button, Divider, Row, Col } from "antd"
 
+import { Typography, Button, Divider, Row, Col } from "antd"
 const { Title, Paragraph } = Typography
 
 const IndexPage = () => (
@@ -25,14 +24,14 @@ const IndexPage = () => (
     <Row gutter={[32, 12]} className="animated fadeInUp delay-1s">
       <Col lg={{ span: 4 }} md={{ span: 6 }} sm={{ span: 8 }}>
         <Link to="/contact/">
-          <Button shape="round" icon="mail" size="large">
+          <Button shape="round" icon={<MailOutlined />} size="large">
             Contact Me
           </Button>
         </Link>
       </Col>
       <Col sm={{ span: 12 }}>
         <Link to="/resume/">
-          <Button shape="round" icon="profile" size="large">
+          <Button shape="round" icon={<ProfileOutlined />} size="large">
             Resume
           </Button>
         </Link>

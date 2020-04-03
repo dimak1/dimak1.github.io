@@ -1,17 +1,19 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { useMediaQuery } from "react-responsive"
-import { Layout, Menu, Icon, Typography } from "antd"
+import { CopyrightCircleOutlined } from "@ant-design/icons"
+import { Layout, Menu, Typography, Grid } from "antd"
 const { Header, Content, Footer } = Layout
 const { Text } = Typography
 
 const MainLayout = props => {
   const { className, children } = props
-  const isMobile = useMediaQuery({ query: "(max-width : 768px)" })
+
+  const { useBreakpoint } = Grid
+  const screens = useBreakpoint()
 
   return (
-    <Layout className={"wrapper" + (isMobile ? " mobile" : "")}>
+    <Layout className={"wrapper" + (screens.xs ? " responsive" : "")}>
       <Header className="header">
         <Menu mode="horizontal" className="menu">
           <Menu.Item key="1">
@@ -28,7 +30,7 @@ const MainLayout = props => {
       <Content className={"content " + className}>{children}</Content>
       <Footer>
         <div className="site-footer">
-          <Icon type="copyright" /> {new Date().getFullYear()} Dima Kostenyuk.{isMobile ? <br /> : " "}
+          <CopyrightCircleOutlined /> {new Date().getFullYear()} Dima Kostenyuk.{screens.xs ? <br /> : " "}
           <Text type="secondary" className="source-code">
             Built with React & Gatsby.{" "}
             <a href="https://github.com/dimak1/personal-site" target="_blank" rel="noopener noreferrer">

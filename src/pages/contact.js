@@ -1,5 +1,7 @@
 import React from "react"
 import { Typography, Button, Divider } from "antd"
+import { MailOutlined, GithubOutlined, LinkedinOutlined } from "@ant-design/icons"
+
 import MainLayout from "../layout/main-layout"
 import { contact } from "../data/contact.json"
 
@@ -16,17 +18,17 @@ const ContactPage = () => {
       <Divider className="divider-alt animated fadeInRight" />
       <div className="profile-links animated fadeInUp delay-05s">
         <a href="ma&#105;lt&#111;&#58;&#37;64&#37;6B%&#54;Fs%74en%79&#117;&#37;6&#66;&#64;gmail&#46;co&#109;">
-          <Button shape="round" icon="mail" size="large">
+          <Button shape="round" icon={<MailOutlined />} size="large">
             Email
           </Button>
         </a>
         <a href={contact.github} target="_blank" rel="noopener noreferrer">
-          <Button shape="round" icon="github" size="large">
+          <Button shape="round" icon={<GithubOutlined />} size="large">
             GitHub
           </Button>
         </a>
         <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">
-          <Button shape="round" icon="linkedin" size="large">
+          <Button shape="round" icon={<LinkedinOutlined />} size="large">
             LinkedIn
           </Button>
         </a>
