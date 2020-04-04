@@ -33,7 +33,7 @@ const MainLayout = props => {
           <CopyrightCircleOutlined /> {new Date().getFullYear()} Dima Kostenyuk.{screens.xs ? <br /> : " "}
           <Text type="secondary" className="source-code">
             Built with React & Gatsby.{" "}
-            <a href="https://github.com/dimak1/personal-site" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/dimak1/dimak1.github.io" target="_blank" rel="noopener noreferrer">
               View source
             </a>
             .
