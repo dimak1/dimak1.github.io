@@ -21,12 +21,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Personal Website of Dima K`,
+        short_name: `Dima K`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#f0f2f5`,
+        theme_color: `#865aa4`,
         display: `minimal-ui`,
+        icon: `src/images/favicon.png`,
       },
     },
     {
