@@ -82,6 +82,10 @@ const ResumePage = () => {
       <div className="work-timeline animated fadeInUp delay-1s">
         <Timeline mode="left">
           <Timeline.Item color="green">
+            <span>March 2020 - Present | Maximus BC</span>
+            <p>Application Developer</p>
+          </Timeline.Item>
+          <Timeline.Item color="green">
             <span>Sept 2011 - Present | Worldwide</span>
             <p>Digital Designer and Website Developer @ Freelance</p>
             <span>
