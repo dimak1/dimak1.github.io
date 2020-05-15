@@ -24,7 +24,7 @@
       "Sketch",
       "inVision"
     ],
-    "develop": ["ReactJS", "EmberJS", "NodeJS", "REST API", "Bootstrap", "Semantic UI", "Json", "Ajax"],
+    "develop": ["ReactJS", "EmberJS", "NodeJS", "GatsbyJS", "REST API", "Bootstrap", "Semantic UI", "Json", "Ajax"],
     "testing": ["HP ALM (QC)", "jUnit", "Jest", "Unit", "Acceptance", "Integration", "TDD"],
     "tracking": ["Jira", "Confluence", "SharePoint", "YouTrack", "Git", "Svn"],
     "devOps": ["CI/CD", "CircleCI", "Jenkins", "Heroku", "AWS"],

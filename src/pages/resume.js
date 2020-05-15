@@ -82,8 +82,12 @@ const ResumePage = () => {
       <div className="work-timeline animated fadeInUp delay-1s">
         <Timeline mode="left">
           <Timeline.Item color="green">
-            <span>March 2020 - Present | Maximus BC</span>
-            <p>Application Developer</p>
+            <span>March 2020 - Present | Victoria, BC</span>
+            <p>Application Developer @ MAXIMUS Canada</p>
+            <span>
+              <div>- Develop applications for Health Insurance BC</div>
+              <ToolOutlined /> Java, SQL, Web services
+            </span>
           </Timeline.Item>
           <Timeline.Item color="green">
             <span>Sept 2011 - Present | Worldwide</span>
@@ -102,7 +106,7 @@ const ResumePage = () => {
             <span>Oct 2019 - March 2020 | Victoria, BC</span>
             <p>Full-stack Developer @ Button Inc.</p>
             <span>
-              <div>- Work as part of Agile team on projects for BC government and private clients</div>
+              <div>- Work as part of Agile team on projects for the province of BC and private clients</div>
               <div>- Develop web applications and create interactive user interfaces and experiences</div>
               <ToolOutlined /> Javascript, TypeScript, Node.js, React, GraphQL, PostgreSQL
             </span>
