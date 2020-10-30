@@ -1,6 +1,6 @@
 # Portfolio Website
 
-### [https://dimakostenyuk.com](dimakostenyuk.com)
+### [Viem Portfolio](https://dimak1.github.io/)
 
 <!-- [![CircleCI](https://circleci.com/gh/dimak1/dimak1.github.io.svg?style=svg)](https://circleci.com/gh/dimak1/dimak1.github.io) -->
 
