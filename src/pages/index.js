@@ -12,13 +12,13 @@ const IndexPage = () => (
     <Title className="name animated fadeInDown">Dima Kostenyuk</Title>
     <Divider className="divider animated fadeInLeft" />
     <Title level={2} className="title animated fadeIn slower">
-      I'm a full-stack developer with a passion for technology and design.
+      I'm a web developer with a passion for technology and design.
     </Title>
     <Divider className="divider-alt animated fadeInRight" />
 
     <Paragraph className="about-me animated flipInX delay-05s">
       I like to solve challenges by learning new things. I freelance as a website designer & developer. I enjoy
-      traveling, listenting to house music and capturing beautiful moments. Currently living in Victoria, British
+      traveling, listening to house music and capturing beautiful moments. Currently living in Victoria, British
       Columbia, Canada.
     </Paragraph>
     <br />
