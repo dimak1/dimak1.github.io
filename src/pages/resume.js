@@ -83,10 +83,12 @@ const ResumePage = () => {
         <Timeline mode="left">
           <Timeline.Item color="green">
             <span>March 2020 - Present | Victoria, BC</span>
-            <p>Application Developer @ MAXIMUS Canada</p>
+            <p>Web Application Developer @ MAXIMUS Canada</p>
             <span>
-              <div>- Develop applications for Health Insurance BC</div>
-              <ToolOutlined /> Java, SQL, Web services
+              <div>- Work as part of a multi-disciplinary team on projects for Ministry of Health</div>
+              <div>- Design, budild and deploy web applications</div>
+              <div>- Assist in creating user journeys and interfaces</div>
+              <ToolOutlined /> HTML, CSS, Bootstrap, Javascript, Java, Web services
             </span>
           </Timeline.Item>
           <Timeline.Item color="green">
@@ -120,7 +122,7 @@ const ResumePage = () => {
           </Timeline.Item>
           <Timeline.Item color="grey">
             <span>Jan 2013 - March 2018 | Toronto, ON</span>
-            <p>Back-end Web Developer @ CIBC</p>
+            <p>Application Developer @ CIBC</p>
             <div>- Design, develop, build and test web application systems</div>
             <div>- Estimate tasks, create user stories and acceptance criterias</div>
             <div>
@@ -130,6 +132,31 @@ const ResumePage = () => {
             <ToolOutlined /> Java, Spring, jUnit, Maven
           </Timeline.Item>
           <Timeline.Item dot={<ClockCircleOutlined />}></Timeline.Item>
+        </Timeline>
+      </div>
+
+      <Divider className="divider animated fadeInRight" />
+      <Title level={2} className="animated flipInX delay-1s">
+        Awards
+      </Title>
+
+      <div className="work-timeline animated fadeInUp delay-1s">
+        <Timeline mode="left">
+          <Timeline.Item color="grey">
+            <span>June 2017, Jan 2015, Dec 2013 | EVP, Technology, CIBC</span>
+            <p>3 x Quarterly Team Achiever</p>
+            <span>Online Banking Replatforming; Homepage Performance Optimization; SVN Migration</span>
+          </Timeline.Item>
+          <Timeline.Item color="grey">
+            <span>June 2016 | Digital, CIBC</span>
+            <p>Winner of CIBC Digital Hackathon, 2nd Place</p>
+            <span>As a team, worked with consultant and designer on ideas for new features in Online Banking</span>
+          </Timeline.Item>
+          <Timeline.Item color="grey">
+            <span>Sept 2014 | Internet Channel Development, CIBC</span>
+            <p>eAchiever Award​</p>
+            <span>Support Internet Channel Dev team during DIT, SIT and UAT testing phases for Release 22</span>
+          </Timeline.Item>
         </Timeline>
       </div>
 
