@@ -86,7 +86,7 @@ const ResumePage = () => {
             <p>Web Application Developer @ MAXIMUS Canada</p>
             <span>
               <div>- Work as part of a multi-disciplinary team on projects for Ministry of Health</div>
-              <div>- Design, budild and deploy web applications</div>
+              <div>- Design, build and deploy web applications</div>
               <div>- Assist in creating user journeys and interfaces</div>
               <ToolOutlined /> HTML, CSS, Bootstrap, Javascript, Java, Web services
             </span>
@@ -124,7 +124,7 @@ const ResumePage = () => {
             <span>Jan 2013 - March 2018 | Toronto, ON</span>
             <p>Application Developer @ CIBC</p>
             <div>- Design, develop, build and test web application systems</div>
-            <div>- Estimate tasks, create user stories and acceptance criterias</div>
+            <div>- Estimate tasks, create user stories and acceptance criteria</div>
             <div>
               - Prepare and present sprint demos, participate in sprint planning and retrospects as per Agile
               Methodology
